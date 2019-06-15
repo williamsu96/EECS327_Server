@@ -1,0 +1,22 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<script language="javascript" type="text/javascript" >
+<!--
+function ChangeMedia(){
+	var d = new Date();
+	var t = d.getTime();
+	document.getElementById('webcamImage').src = "/uploads/stream.jpeg?"+t;
+}
+var reloadcam = setInterval("ChangeMedia()",2000);
+-->
+</script>
+
+{%if filename %}
+	<h1><img src="/uploads/stream.jpeg", id="webcamImage"></h1>
+{%else %}
+	<h1>image not found!</h1>
+{% endif %}
+</body>
+
+
+
